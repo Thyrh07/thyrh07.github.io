@@ -4,6 +4,7 @@ author: Rhovelz
 date: 2026-11-04 08:00:00 +0700
 categories: [Research]
 tags: [Android, Malware, BankingTrojan, RAT, MobileSecurity, OnDeviceFraud]
+image: /assets/img/Post/ToxicPanda.png
 excerpt: ""
 ---
 
