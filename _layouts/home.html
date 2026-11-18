@@ -72,13 +72,6 @@ layout: page
         </a>
       </div>
       {% endif %}
-      {% unless post.image %}
-      {% if post.summary %}
-      <p>
-        {{ post.summary | strip_html | truncate: 200 }}
-      </p>
-      {% endif %}
-      {% endunless %}
     </div>
 
     <div class="post-meta text-muted">
