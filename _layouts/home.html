@@ -73,10 +73,11 @@ layout: page
       </div>
       {% endif %}
       {% unless post.image %}
+      {% if post.summary %}
       <p>
-        {% include no-linenos.html content=post.content %}
-        {{ content | markdownify | strip_html | truncate: 200 }}
+        {{ post.summary | strip_html | truncate: 200 }}
       </p>
+      {% endif %}
       {% endunless %}
     </div>
 
