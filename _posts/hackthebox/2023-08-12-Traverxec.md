@@ -4,7 +4,6 @@ author: Rhovelionz
 date: 2023-08-11 22:21:00 +0700
 categories: [Hackthebox]
 tags: [Nostromo, Ssh, Cve, ExploitDB, John]
-image: /assets/img/Post/Traverxec.jpg
 ---
 
 >   **Any actions and or activities related to the material contained within this Website is solely your responsibility. This site contains materials that can be potentially damaging or dangerous. If you do not fully understand something on this site, then GO OUT OF HERE! Refer to the laws in your province/country before accessing, using,or in any other way utilizing these materials.These materials are for educational and research purposes only.**
