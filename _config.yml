@@ -20,8 +20,8 @@ url: 'thyrh07.github.io'
 
 author: Thyrh07                  # change to your full name
 
-#avatar: /assets/img/sample/rhovelionz1.jpg
-#avatar: /assets/img/sample/rhovelionz.png
+#avatar: /assets/img/sample/thyrh071.jpg
+#avatar: /assets/img/sample/thyrh07.png
 avatar: /assets/img/sample/3_2.png
 
 github:
@@ -34,7 +34,7 @@ github:
 #  username: radivan-hanief-b57740181
 
 #hackthebox:
-#  username: rhovelionz
+#  username: thyrh07
 
 social:
   name: thyrh07                  # it will shows as the copyright owner in Footer
@@ -42,7 +42,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/radivanrh      # change to your twitter homepage
-    # - https://github.com/rhovelionzrhovelionz       # change to your github homepage
+    # - https://github.com/thyrh07thyrh07       # change to your github homepage
     # Uncomment below to add more social links
     #- https://www.linkedin.com/in/radivan-hanief-b57740181
 
@@ -75,7 +75,7 @@ google_analytics:
 #disqus:
 #  layout: default
 #  comments: true  # boolean type, the global switch for posts comments.
-#  shortname: 'rhovelionzrhovelionz'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+#  shortname: 'thyrh07thyrh07'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 
 # Prefer color scheme setting, available values:

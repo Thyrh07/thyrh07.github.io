@@ -1,6 +1,6 @@
 ---
 title: Hackthebox - Traverxec
-author: Rhovelionz
+author: Thyrh07
 date: 2023-08-11 22:21:00 +0700
 categories: [Hackthebox]
 tags: [Nostromo, Ssh, Cve, ExploitDB, John]
