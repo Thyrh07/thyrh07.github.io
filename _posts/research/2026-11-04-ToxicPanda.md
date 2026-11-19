@@ -1,6 +1,6 @@
 ---
 title: ToxicPanda 2.0 - Banking Trojan yang Menyalahgunakan VPN, Accessibility, dan ADB untuk On-Device Fraud
-author: Rhovelz
+author: Thyrh07
 date: 2026-11-04 08:00:00 +0700
 categories: [Research]
 tags: [Android, Malware, BankingTrojan, RAT, MobileSecurity, OnDeviceFraud]
