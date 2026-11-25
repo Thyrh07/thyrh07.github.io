@@ -4,89 +4,94 @@
 * https://github.com/cotes2020/jekyll-theme-chirpy
 * © 2018-2019 Cotes Chung
 * MIT Licensed
+*
+* Theme: Catppuccin Mocha (applied 2026-11-25)
+* Old Dracula values are kept as trailing comments on each changed line,
+* so rollback is just swapping the values back. Delete the comments once
+* the Mocha theme is confirmed.
 */
 
 @mixin dark-scheme {
   /* framework */
-  --main-wrapper-bg: #282a36;
+  --main-wrapper-bg: #1e1e2e; /* Dracula: #282a36 */
   --body-bg: var(--main-wrapper-bg);
-  --topbar-wrapper-bg: #282a36;
-  --search-wrapper-bg: #282a36;
-  --search-icon-color: #50fa7b;
-  --input-focus-border-color: #50fa7b;
-  --mask-bg: #282a36;
+  --topbar-wrapper-bg: #1e1e2e; /* Dracula: #282a36 */
+  --search-wrapper-bg: #181825; /* Dracula: #282a36 */
+  --search-icon-color: #89b4fa; /* Dracula: #50fa7b */
+  --input-focus-border-color: #89b4fa; /* Dracula: #50fa7b */
+  --mask-bg: #1e1e2e; /* Dracula: #282a36 */
   --footer-bg-color: var(--main-wrapper-bg);
 
   /* common color */
-  --text-color: #f8f8f2;
-  --text-muted-color: #f8f8f2;
-  --link-color: #bd93f9;
-  --link-underline-color: #bd93f9;
-  --main-border-color: #6272a4;
-  --button-bg: #44475a;
-  --blockquote-border-color: #ff79c6;
-  --blockquote-text-color: #50fa7b;
+  --text-color: #cdd6f4; /* Dracula: #f8f8f2 */
+  --text-muted-color: #a6adc8; /* Dracula: #f8f8f2 */
+  --link-color: #89b4fa; /* Dracula: #bd93f9 */
+  --link-underline-color: #89b4fa; /* Dracula: #bd93f9 */
+  --main-border-color: #45475a; /* Dracula: #6272a4 */
+  --button-bg: #313244; /* Dracula: #44475a */
+  --blockquote-border-color: #89b4fa; /* Dracula: #ff79c6 */
+  --blockquote-text-color: #a6e3a1; /* Dracula: #50fa7b */
 
-  --btn-border-color: #ff79c6;
+  --btn-border-color: #89b4fa; /* Dracula: #ff79c6 */
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: var(--btn-border-color);
   --btn-box-shadow: var(--main-wrapper-bg);
 
-  --card-header-bg: #282a36;
-  --label-color: #bd93f9;
+  --card-header-bg: #1e1e2e; /* Dracula: #282a36 */
+  --label-color: #89b4fa; /* Dracula: #bd93f9 */
 
   /* Sidebar */
-  --nav-cursor-color: #f1fa8c;
-  --sidebar-bg: radial-gradient(ellipse, #44475a 0%, #282a36 100%); 
-  --sidebar-wrapper-bg: #ff79c6;
+  --nav-cursor-color: #f9e2af; /* Dracula: #f1fa8c */
+  --sidebar-bg: radial-gradient(ellipse, #313244 0%, #1e1e2e 100%); /* Dracula: radial-gradient(ellipse, #44475a 0%, #282a36 100%) */
+  --sidebar-wrapper-bg: #89b4fa; /* Dracula: #ff79c6 */
 
   /* Top Bar */
   --topbar-text-color: var(--text-color);
 
   /* Home page */
-  --post-list-text-color: #6272a4;
+  --post-list-text-color: #7f849c; /* Dracula: #6272a4 */
   --btn-patinator-text-color: var(--text-color);
-  --btn-paginator-hover-color: #8be9fd;
-  --btn-active-bg: rgba(28, 52, 94, 1);
-  --btn-active-border-color: #ff5555;
+  --btn-paginator-hover-color: #74c7ec; /* Dracula: #8be9fd */
+  --btn-active-bg: rgba(137, 180, 250, 0.2); /* Dracula: rgba(28, 52, 94, 1) */
+  --btn-active-border-color: #f38ba8; /* Dracula: #ff5555 */
   --btn-text-color: var(--text-color);
   --btn-paginator-border-color: var(--btn-border-color);
   --btn-paginator-shadow: var(--main-wrapper-bg);
 
   /* Posts */
-  --toc-highlight: #ff79c6;
-  --tag-bg: #f8f8f2;
-  --tag-hover: #50fa7b;
-  --tb-odd-bg: #44475a; /* odd rows of the posts' table */
-  --tb-even-bg: #383a4a; /* even rows of the posts' table */
-  --tb-border-color: #6272a4;
-  --tb-text-color: #f8f8f2;
-  --footnote-target-bg: #f1fa8c;
-  --btn-share-color: #6c757d;
-  --btn-share-hover-color: #bfc1ca;
+  --toc-highlight: #89b4fa; /* Dracula: #ff79c6 */
+  --tag-bg: #313244; /* Dracula: #f8f8f2 */
+  --tag-hover: #89b4fa; /* Dracula: #50fa7b */
+  --tb-odd-bg: #313244; /* odd rows of the posts' table */ /* Dracula: #44475a */
+  --tb-even-bg: #181825; /* even rows of the posts' table */ /* Dracula: #383a4a */
+  --tb-border-color: #45475a; /* Dracula: #6272a4 */
+  --tb-text-color: #cdd6f4; /* Dracula: #f8f8f2 */
+  --footnote-target-bg: #f9e2af; /* Dracula: #f1fa8c */
+  --btn-share-color: #7f849c; /* Dracula: #6c757d */
+  --btn-share-hover-color: #cdd6f4; /* Dracula: #bfc1ca */
   --relate-post-date: var(--text-muted-color);
-  --card-bg: #282a36;
-  --card-border-color: #44475a;
+  --card-bg: #1e1e2e; /* Dracula: #282a36 */
+  --card-border-color: #313244; /* Dracula: #44475a */
   --card-box-shadow: var(--main-wrapper-bg);
 
   /* tags */
-  --tag-border: #ffb86c;
-  --tag-shadow: #ffb86c;
+  --tag-border: #fab387; /* Dracula: #ffb86c */
+  --tag-shadow: #fab387; /* Dracula: #ffb86c */
   --search-tag-bg: var(--tag-bg);
 
-  --dash-color: rgb(63, 65, 68);
+  --dash-color: rgb(69, 71, 90); /* Dracula: rgb(63, 65, 68) */
 
   /* categories */
-  --categories-border: #ffb86c;
-  --categories-hover-bg: #ffb86c;
+  --categories-border: #fab387; /* Dracula: #ffb86c */
+  --categories-hover-bg: #fab387; /* Dracula: #ffb86c */
 
   /* archives */
-  --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(63, 65, 68);
+  --timeline-node-bg: rgb(147, 153, 178); /* Dracula: rgb(150, 152, 156) */
+  --timeline-color: rgb(69, 71, 90); /* Dracula: rgb(63, 65, 68) */
   --timeline-year-dot-color: var(--timeline-color);
 
   /* Footer */
-  --footer-link: #ff5555;
+  --footer-link: #f38ba8; /* Dracula: #ff5555 */
 
   .post-content img {
     filter: brightness(90%);
@@ -129,7 +134,7 @@
 
   #archives li:nth-child(odd) {
     background-image: linear-gradient(to left,
-    #44475a, #44475a, #44475a, rgb(39, 39, 45), rgb(26, 26, 30));
+    #313244, #313244, #313244, rgb(24, 24, 37), rgb(17, 17, 27)); /* Dracula: #44475a, #44475a, #44475a, rgb(39, 39, 45), rgb(26, 26, 30) */
   }
 
 } // dark-scheme
